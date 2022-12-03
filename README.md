@@ -1,14 +1,6 @@
-# vue-project
+# Task Tracker
 
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+A task tracker with simple interface, implemented with Vue and a fake API with JSON Server.
 
 ## Project Setup
 
@@ -16,10 +8,11 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Compile and Run for Development
 
 ```sh
 npm run dev
+npm run serve
 ```
 
 ### Compile and Minify for Production
@@ -27,3 +20,9 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Features (v1.0)
+
+1. Add tasks (Name, day and reminder)
+2. Highlight important tasks by double clicking
+3. Delete tasks

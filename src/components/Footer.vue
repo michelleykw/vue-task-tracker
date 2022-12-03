@@ -1,13 +1,30 @@
 <script>
 export default {
   name: 'Footer',
+  computed: {
+    aboutPage() {
+        if (this.$route.path === '/about') {
+            return true
+        } else {
+            return false
+        }
+    },
+    homePage() {
+        if (this.$route.path === '/') {
+            return true
+        } else {
+            return false
+        }
+    }
+  }
 }
 </script>
 
 <template>
   <footer>
-    <p>Copyright &copy; 2022</p>
-    <router-link to="/about">About</router-link>
+    <p>Copyright &copy; {{ new Date().getFullYear() }}</p>
+    <router-link v-show="homePage" to="/about">About</router-link>
+    <router-link v-show="aboutPage" to="/">Home</router-link>
   </footer>
 </template>
 
